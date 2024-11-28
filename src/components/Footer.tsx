@@ -8,13 +8,15 @@ const translations = {
     title: "PlanB",
     subtitle: "It's always good to have a planB",
     copyright: "© 2024 PlanB. All rights reserved.",
-    switchLanguage: "Mudar para Português"
+    switchLanguage: "Mudar para Português",
+    builtWith: "Built with 🤖 in 🇧🇷"
   },
   "pt-BR": {
     title: "PlanB",
     subtitle: "É sempre bom ter um planB",
     copyright: "© 2024 PlanB. Todos os direitos reservados.",
-    switchLanguage: "Switch to English"
+    switchLanguage: "Switch to English",
+    builtWith: "Feito com 🤖 no 🇧🇷"
   }
 };
 
@@ -50,9 +52,14 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="dark:text-white/60 text-black/60">
-              {t.copyright}
-            </p>
+            <div className="space-y-2">
+              <p className="dark:text-white/60 text-black/60">
+                {t.copyright}
+              </p>
+              <p className="dark:text-white/40 text-black/40 text-sm">
+                {t.builtWith}
+              </p>
+            </div>
             <div className="flex items-center gap-4">
               <Button
                 variant="ghost"
