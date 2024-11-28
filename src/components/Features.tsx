@@ -17,7 +17,7 @@ const translations = {
       },
       {
         title: "PIX + Open Finance = ❤️",
-        description: "Automate your investments with us.\nSet a recurring buy (from hourly to monthly), and watch your wealth grow effortlessly."
+        description: "Automate your investments with us!\nSet a recurring buy - from hourly to monthly\nand watch your stack growing effortlessly"
       }
     ]
   },
@@ -35,7 +35,7 @@ const translations = {
       },
       {
         title: "PIX + Open Finance = ❤️",
-        description: "Automatize seus investimentos conosco.\nDefina uma compra recorrente (de hora em hora até mensal) e veja sua riqueza crescer sem esforço."
+        description: "Automatize seus investimentos conosco!\nDefina uma compra recorrente - de hora em hora até mensal\ne veja sua stack crescer sem esforço"
       }
     ]
   }
