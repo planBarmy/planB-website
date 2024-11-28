@@ -5,7 +5,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const translations = {
   en: {
     title: "Built over next-gen tech",
-    subtitle: "Automate your investments with us.\nSet a recurring buy (from hourly to monthly), and watch your wealth grow effortlessly.",
     features: [
       {
         title: "Your keys, your Bitcoins",
@@ -16,14 +15,13 @@ const translations = {
         description: "Bank-grade security for all your transactions and personal data"
       },
       {
-        title: "PIX + Open Finance = <3",
-        description: "Virtual and physical cards with advanced control features"
+        title: "PIX + Open Finance = ❤️",
+        description: "Automate your investments with us.\nSet a recurring buy (from hourly to monthly), and watch your wealth grow effortlessly."
       }
     ]
   },
   "pt-BR": {
     title: "Construído com tecnologia de última geração",
-    subtitle: "Automatize seus investimentos conosco.\nDefina uma compra recorrente (de hora em hora até mensal) e veja sua riqueza crescer sem esforço.",
     features: [
       {
         title: "Suas chaves, seus Bitcoins",
@@ -34,8 +32,8 @@ const translations = {
         description: "Segurança de nível bancário para todas as suas transações e dados pessoais"
       },
       {
-        title: "PIX + Open Finance = <3",
-        description: "Cartões virtuais e físicos com recursos avançados de controle"
+        title: "PIX + Open Finance = ❤️",
+        description: "Automatize seus investimentos conosco.\nDefina uma compra recorrente (de hora em hora até mensal) e veja sua riqueza crescer sem esforço."
       }
     ]
   }
@@ -72,9 +70,6 @@ const Features = () => {
             <h2 className="text-4xl font-bold dark:text-white text-black">
               {t.title}
             </h2>
-            <p className="text-xl dark:text-white/60 text-black/60 whitespace-pre-line">
-              {t.subtitle}
-            </p>
           </div>
           <div className="grid gap-6">
             {features.map((feature, index) => (
@@ -87,7 +82,7 @@ const Features = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2 dark:text-white text-black">{feature.title}</h3>
-                  <p className="dark:text-white/60 text-black/60">{feature.description}</p>
+                  <p className="dark:text-white/60 text-black/60 whitespace-pre-line">{feature.description}</p>
                 </div>
               </Card>
             ))}
