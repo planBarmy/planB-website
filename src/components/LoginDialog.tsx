@@ -31,7 +31,7 @@ const LoginDialog = () => {
     <Dialog>
       <DialogTrigger asChild>
         <Button className="bg-[#F7931A] text-white hover:bg-[#E88A19]">
-          Waitlist
+          Waiting list
           <LogIn className="w-4 h-4 ml-2" />
         </Button>
       </DialogTrigger>

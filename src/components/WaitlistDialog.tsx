@@ -24,12 +24,12 @@ const WaitlistDialog = () => {
     <Dialog>
       <DialogTrigger asChild>
         <Button className="px-8 py-6 text-lg bg-white text-black hover:bg-white/90 flex items-center gap-2">
-          Join Waitlist
+          Join Waiting list
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] bg-background">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold">Join the Waitlist</DialogTitle>
+          <DialogTitle className="text-2xl font-bold">Join the Waiting list</DialogTitle>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <div className="space-y-2">
