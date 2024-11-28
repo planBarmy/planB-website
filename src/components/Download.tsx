@@ -21,10 +21,10 @@ const Download = () => {
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center space-y-8">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-4xl md:text-5xl font-bold dark:text-white text-black">
             {t.title}
           </h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
+          <p className="text-xl dark:text-white/60 text-black/60 max-w-2xl mx-auto">
             {t.subtitle}
           </p>
           <div className="flex justify-center">

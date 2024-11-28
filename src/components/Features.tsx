@@ -47,17 +47,17 @@ const Features = () => {
 
   const features = [
     {
-      icon: <CreditCard className="w-6 h-6 text-white" />,
+      icon: <CreditCard className="w-6 h-6 dark:text-white text-black" />,
       title: t.features[0].title,
       description: t.features[0].description
     },
     {
-      icon: <Shield className="w-6 h-6 text-white" />,
+      icon: <Shield className="w-6 h-6 dark:text-white text-black" />,
       title: t.features[1].title,
       description: t.features[1].description
     },
     {
-      icon: <img src="/lovable-uploads/660406c5-6dc8-409d-9cbe-8d6cf55a447e.png" alt="PIX + Open Finance" className="w-6 h-6 invert" />,
+      icon: <img src="/lovable-uploads/660406c5-6dc8-409d-9cbe-8d6cf55a447e.png" alt="PIX + Open Finance" className="w-6 h-6 dark:invert" />,
       title: t.features[2].title,
       description: t.features[2].description
     }
@@ -69,10 +69,10 @@ const Features = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-white">
+            <h2 className="text-4xl font-bold dark:text-white text-black">
               {t.title}
             </h2>
-            <p className="text-xl text-white/60 whitespace-pre-line">
+            <p className="text-xl dark:text-white/60 text-black/60 whitespace-pre-line">
               {t.subtitle}
             </p>
           </div>
@@ -86,8 +86,8 @@ const Features = () => {
                   {feature.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
-                  <p className="text-white/60">{feature.description}</p>
+                  <h3 className="text-xl font-semibold mb-2 dark:text-white text-black">{feature.title}</h3>
+                  <p className="dark:text-white/60 text-black/60">{feature.description}</p>
                 </div>
               </Card>
             ))}
