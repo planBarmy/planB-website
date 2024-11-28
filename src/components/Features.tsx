@@ -30,7 +30,7 @@ const Features = () => {
               Built over next-gen tech
             </h2>
             <p className="text-xl text-white/60">
-              Simple transfers, payments for utilities, functional statements, card settings, for which you used to have to go to the branch online-banking
+              Our application uses best-in class providers, so we can offer the best experience with the lowest fees.
             </p>
           </div>
           <div className="grid gap-6">
