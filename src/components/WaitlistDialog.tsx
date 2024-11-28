@@ -14,6 +14,7 @@ import { supabase } from "@/integrations/supabase/client";
 const WaitlistDialog = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,6 +29,7 @@ const WaitlistDialog = () => {
 
       toast.success("You've been added to the waitlist!");
       setEmail("");
+      setOpen(false);
     } catch (error) {
       console.error('Error:', error);
       toast.error("Failed to join waitlist. Please try again.");
@@ -37,7 +39,7 @@ const WaitlistDialog = () => {
   };
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button className="px-8 py-6 text-lg bg-[#F7931A] text-white hover:bg-[#E88A19] flex items-center gap-2">
           Join the waiting list
