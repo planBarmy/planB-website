@@ -12,10 +12,7 @@ const Navbar = () => {
             className="h-12"
           />
         </div>
-        <div className="hidden md:flex items-center space-x-8">
-          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10">
-            Open your account
-          </Button>
+        <div className="hidden md:flex items-center">
           <LoginDialog />
         </div>
       </div>
