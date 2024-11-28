@@ -5,7 +5,7 @@ const Features = () => {
   const features = [
     {
       icon: <Wallet className="w-6 h-6 text-white" />,
-      title: "Mobile Banking",
+      title: "Your keys, your Bitcoins",
       description: "Manage your finances on the go with our secure mobile banking platform"
     },
     {
