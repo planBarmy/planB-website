@@ -46,7 +46,7 @@ const WaitlistDialog = () => {
             />
           </div>
           <Button type="submit" className="w-full bg-[#F7931A] text-white hover:bg-[#E88A19]">
-            Submit
+            Join now
           </Button>
         </form>
       </DialogContent>

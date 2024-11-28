@@ -15,15 +15,13 @@ import { useToast } from "@/components/ui/use-toast";
 
 const LoginDialog = () => {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const { toast } = useToast();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically handle the login logic
     toast({
-      title: "Login attempted",
-      description: "This is a demo. Login functionality is not implemented yet.",
+      title: "Signup attempted",
+      description: "This is a demo. Signup functionality is not implemented yet.",
     });
   };
 
@@ -37,9 +35,9 @@ const LoginDialog = () => {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] bg-background">
         <DialogHeader>
-          <DialogTitle className="text-2xl">Sign in to PlanB</DialogTitle>
+          <DialogTitle className="text-2xl">Sign up to PlanB</DialogTitle>
           <DialogDescription>
-            Enter your email and password to access your account
+            Enter your email to join our waiting list
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleLogin} className="space-y-4 mt-4">
@@ -54,19 +52,8 @@ const LoginDialog = () => {
               required
             />
           </div>
-          <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
-            <Input
-              id="password"
-              type="password"
-              placeholder="Enter your password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-          </div>
           <Button type="submit" className="w-full bg-[#F7931A] text-white hover:bg-[#E88A19]">
-            Sign in
+            Join now
           </Button>
         </form>
       </DialogContent>
