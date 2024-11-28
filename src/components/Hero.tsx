@@ -1,30 +1,75 @@
 import WaitlistDialog from "@/components/WaitlistDialog";
+import { useLanguage } from "@/contexts/LanguageContext";
+
+const translations = {
+  en: {
+    title: "The Bitcoin Machine",
+    subtitle: "planB is the best way to convert your BRL to BTC.",
+    description: "Exit the inflationary system and create your wealth with us.",
+    stats: {
+      wallet: {
+        title: "Free",
+        subtitle: "Wallet creation"
+      },
+      withdrawals: {
+        title: "On-chain",
+        subtitle: "Withdrawals"
+      },
+      security: {
+        title: "Secure",
+        subtitle: "Open source code"
+      }
+    }
+  },
+  "pt-BR": {
+    title: "A Máquina de Bitcoin",
+    subtitle: "planB é a melhor maneira de converter seu BRL para BTC.",
+    description: "Saia do sistema inflacionário e crie sua riqueza conosco.",
+    stats: {
+      wallet: {
+        title: "Grátis",
+        subtitle: "Criação de carteira"
+      },
+      withdrawals: {
+        title: "On-chain",
+        subtitle: "Saques"
+      },
+      security: {
+        title: "Seguro",
+        subtitle: "Código aberto"
+      }
+    }
+  }
+};
 
 const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <div className="min-h-screen flex items-center justify-center px-4 pt-20 bg-background">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-            The Bitcoin Machine
+            {t.title}
           </h1>
           <div className="space-y-2">
-            <p className="text-lg text-white/80">planB is the best way to convert your BRL to BTC.</p>
-            <p className="text-lg text-white/80 max-w-xl">Exit the inflationary system and create your wealth with us.</p>
+            <p className="text-lg text-white/80">{t.subtitle}</p>
+            <p className="text-lg text-white/80 max-w-xl">{t.description}</p>
           </div>
           <WaitlistDialog />
           <div className="grid grid-cols-3 gap-8 pt-8">
             <div>
-              <div className="text-3xl font-bold text-white">Free</div>
-              <div className="text-white/60">Wallet creation</div>
+              <div className="text-3xl font-bold text-white">{t.stats.wallet.title}</div>
+              <div className="text-white/60">{t.stats.wallet.subtitle}</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">On-chain</div>
-              <div className="text-white/60">Withdrawals</div>
+              <div className="text-3xl font-bold text-white">{t.stats.withdrawals.title}</div>
+              <div className="text-white/60">{t.stats.withdrawals.subtitle}</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">Secure</div>
-              <div className="text-white/60">Open source code</div>
+              <div className="text-3xl font-bold text-white">{t.stats.security.title}</div>
+              <div className="text-white/60">{t.stats.security.subtitle}</div>
             </div>
           </div>
         </div>
