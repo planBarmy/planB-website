@@ -21,13 +21,19 @@ const WaitlistDialog = () => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase
+      const { data, error } = await supabase
         .from('waitlist')
-        .insert([{ email }]);
+        .insert([{ email }])
+        .select();
 
       if (error) {
         console.error('Supabase error:', error);
-        throw error;
+        if (error.code === '23505') { // Unique violation
+          toast.error("This email is already on the waitlist!");
+        } else {
+          toast.error("Failed to join waitlist. Please try again.");
+        }
+        return;
       }
 
       toast.success("You've been added to the waitlist!");
@@ -35,7 +41,7 @@ const WaitlistDialog = () => {
       setOpen(false);
     } catch (error) {
       console.error('Error:', error);
-      toast.error("Failed to join waitlist. Please try again.");
+      toast.error("An unexpected error occurred. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
