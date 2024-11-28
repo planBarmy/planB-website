@@ -30,8 +30,8 @@ const LoginDialog = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="bg-[#F7931A] text-white hover:bg-[#E88A19]">
-          Waiting list
+        <Button className="px-8 py-6 text-lg bg-[#F7931A] text-white hover:bg-[#E88A19] flex items-center gap-2">
+          Join the waiting list
           <LogIn className="w-4 h-4 ml-2" />
         </Button>
       </DialogTrigger>
@@ -65,7 +65,7 @@ const LoginDialog = () => {
               required
             />
           </div>
-          <Button type="submit" className="w-full bg-[#F2FF44] text-black hover:bg-[#E2EF34]">
+          <Button type="submit" className="w-full bg-[#F7931A] text-white hover:bg-[#E88A19]">
             Sign in
           </Button>
         </form>

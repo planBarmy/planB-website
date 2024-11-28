@@ -45,7 +45,7 @@ const WaitlistDialog = () => {
               required
             />
           </div>
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full bg-[#F7931A] text-white hover:bg-[#E88A19]">
             Submit
           </Button>
         </form>
