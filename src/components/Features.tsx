@@ -1,22 +1,65 @@
 import { Card } from "@/components/ui/card";
 import { CreditCard, Shield } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
+const translations = {
+  en: {
+    title: "Built over next-gen tech",
+    subtitle: "Automate your investments with us.\nSet a recurring buy (from hourly to monthly), and watch your wealth grow effortlessly.",
+    features: [
+      {
+        title: "Your keys, your Bitcoins",
+        description: "We are a non-custodial wallet, this means we can never access your funds"
+      },
+      {
+        title: "Secure Transactions",
+        description: "Bank-grade security for all your transactions and personal data"
+      },
+      {
+        title: "PIX + Open Finance = <3",
+        description: "Virtual and physical cards with advanced control features"
+      }
+    ]
+  },
+  "pt-BR": {
+    title: "Construído com tecnologia de última geração",
+    subtitle: "Automatize seus investimentos conosco.\nDefina uma compra recorrente (de hora em hora até mensal) e veja sua riqueza crescer sem esforço.",
+    features: [
+      {
+        title: "Suas chaves, seus Bitcoins",
+        description: "Somos uma carteira não custodial, isso significa que nunca podemos acessar seus fundos"
+      },
+      {
+        title: "Transações Seguras",
+        description: "Segurança de nível bancário para todas as suas transações e dados pessoais"
+      },
+      {
+        title: "PIX + Open Finance = <3",
+        description: "Cartões virtuais e físicos com recursos avançados de controle"
+      }
+    ]
+  }
+};
 
 const Features = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const features = [
     {
       icon: <CreditCard className="w-6 h-6 text-white" />,
-      title: "Your keys, your Bitcoins",
-      description: "We are a non-custodial wallet, this means we can never access your funds"
+      title: t.features[0].title,
+      description: t.features[0].description
     },
     {
       icon: <Shield className="w-6 h-6 text-white" />,
-      title: "Secure Transactions",
-      description: "Bank-grade security for all your transactions and personal data"
+      title: t.features[1].title,
+      description: t.features[1].description
     },
     {
       icon: <img src="/lovable-uploads/660406c5-6dc8-409d-9cbe-8d6cf55a447e.png" alt="PIX + Open Finance" className="w-6 h-6 invert" />,
-      title: "PIX + Open Finance = <3",
-      description: "Virtual and physical cards with advanced control features"
+      title: t.features[2].title,
+      description: t.features[2].description
     }
   ];
 
@@ -27,11 +70,10 @@ const Features = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-white">
-              Built over next-gen tech
+              {t.title}
             </h2>
-            <p className="text-xl text-white/60">
-              Automate your investments with us.<br />
-              Set a recurring buy (from hourly to monthly), and watch your wealth grow effortlessly.
+            <p className="text-xl text-white/60 whitespace-pre-line">
+              {t.subtitle}
             </p>
           </div>
           <div className="grid gap-6">
