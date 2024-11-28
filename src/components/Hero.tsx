@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="grid grid-cols-3 gap-8 pt-8">
             <div>
               <div className="text-3xl font-bold text-white">Free</div>
-              <div className="text-white/60">Onboarding Fees</div>
+              <div className="text-white/60">Wallet creation</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-white">On-chain</div>
