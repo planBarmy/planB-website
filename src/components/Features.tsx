@@ -13,7 +13,7 @@ const translations = {
       },
       {
         title: "Spend in person, abroad or online",
-        description: "Generate virtual cards with Visa and USDC"
+        description: "Generate virtual cards with your USD balance, or spend with your BTC over lightining ⚡️"
       },
       {
         title: "PIX + Open Finance = ❤️",
@@ -31,7 +31,7 @@ const translations = {
       },
       {
         title: "Gaste presencialmente, no exterior ou online",
-        description: "Gere cartões virtuais com Visa e USDC"
+        description: "Gere cartões virtuais com seu saldo em USD, ou gaste com seu BTC via lightning ⚡️"
       },
       {
         title: "PIX + Open Finance = ❤️",
