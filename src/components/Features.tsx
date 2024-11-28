@@ -5,6 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const translations = {
   en: {
     title: "Built over next-gen tech",
+    subtitle: "So you can build your next-gen wealth",
     features: [
       {
         title: "Your keys, your Bitcoins",
@@ -22,6 +23,7 @@ const translations = {
   },
   "pt-BR": {
     title: "Construído com tecnologia de última geração",
+    subtitle: "Para você construir sua riqueza do futuro",
     features: [
       {
         title: "Suas chaves, seus Bitcoins",
@@ -70,6 +72,9 @@ const Features = () => {
             <h2 className="text-4xl font-bold dark:text-white text-black">
               {t.title}
             </h2>
+            <p className="text-2xl dark:text-white/80 text-black/80 font-medium">
+              {t.subtitle}
+            </p>
           </div>
           <div className="grid gap-6">
             {features.map((feature, index) => (
