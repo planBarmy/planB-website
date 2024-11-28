@@ -30,7 +30,7 @@ const Features = () => {
               Built over next-gen tech
             </h2>
             <p className="text-xl text-white/60">
-              Automate your investments with us. Set a recurring buy (from hourly to monthly), and watch your wealth grow effortelesly.
+              Automate your investments with us. Set a recurring buy (from hourly to monthly), and watch your wealth grow effortlessly.
             </p>
           </div>
           <div className="grid gap-6">
