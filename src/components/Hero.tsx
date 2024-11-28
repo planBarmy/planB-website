@@ -5,7 +5,7 @@ const translations = {
   en: {
     title: "The Bitcoin Machine",
     subtitle: "planB is the best way to convert your BRL to BTC.",
-    description: "Exit the inflationary system and create your wealth with us.",
+    description: "Exit the inflationary system and build your wealth with us.",
     stats: {
       wallet: {
         title: "Free",
