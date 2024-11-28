@@ -20,7 +20,7 @@ const Hero = () => {
             </div>
             <div>
               <div className="text-3xl font-bold text-white">On-chain</div>
-              <div className="text-white/60">withdrawals</div>
+              <div className="text-white/60">Withdrawals</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-white">Secure</div>
