@@ -31,8 +31,8 @@ const Hero = () => {
         <div className="relative">
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="/lovable-uploads/33e18bc5-55ad-457b-9212-ccd802be8c9a.png"
-              alt="Bitcoin Funnel Illustration"
+              src="/lovable-uploads/87a1f9f1-2cab-4a50-b92b-059d28c8c369.png"
+              alt="Bitcoin Machine Illustration"
               className="w-full h-auto object-contain bg-background backdrop-blur-sm"
             />
           </div>
