@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
-import { ArrowLeft } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const WaitlistDialog = () => {
   const [email, setEmail] = useState("");
@@ -52,8 +52,8 @@ const WaitlistDialog = () => {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button className="px-8 py-6 text-lg bg-[#F7931A] text-white hover:bg-[#E88A19] flex items-center gap-2">
-          <ArrowLeft className="w-5 h-5" />
           Join the waiting list
+          <ArrowRight className="w-5 h-5" />
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] bg-background">
@@ -80,8 +80,8 @@ const WaitlistDialog = () => {
             className="w-full bg-[#F7931A] text-white hover:bg-[#E88A19] flex items-center justify-center gap-2"
             disabled={isSubmitting}
           >
-            <ArrowLeft className="w-5 h-5" />
             {isSubmitting ? "Joining..." : "Join now"}
+            <ArrowRight className="w-5 h-5" />
           </Button>
         </form>
       </DialogContent>
