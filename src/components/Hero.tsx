@@ -34,9 +34,9 @@ const Hero = () => {
         <div className="relative">
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1288&auto=format&fit=crop"
-              alt="Banking App"
-              className="w-full h-auto"
+              src="/lovable-uploads/33e18bc5-55ad-457b-9212-ccd802be8c9a.png"
+              alt="Bitcoin Funnel Illustration"
+              className="w-full h-auto object-contain bg-white/5 backdrop-blur-sm"
             />
           </div>
           <div className="absolute -bottom-4 -right-4 w-72 h-72 bg-accent/20 rounded-full blur-3xl"></div>
