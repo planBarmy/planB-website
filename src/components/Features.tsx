@@ -13,7 +13,7 @@ const translations = {
       },
       {
         title: "Spend in person, abroad or online",
-        description: "Generate virtual cards with your USD balance,\nor spend with your BTC over lightining ⚡️"
+        description: "Generate virtual cards with your USD balance,\nor spend with your BTC over lightning ⚡️"
       },
       {
         title: "PIX + Open Finance = ❤️",
