@@ -7,10 +7,6 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="text-2xl font-bold text-white">PlanB</div>
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-white/80 hover:text-white transition-colors">Deposit</a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors">Dashboard</a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors">Company</a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors">Pricing</a>
           <Button variant="outline" className="text-white border-white/20 hover:bg-white/10">
             Open your account
           </Button>
