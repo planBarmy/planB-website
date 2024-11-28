@@ -11,8 +11,8 @@ const translations = {
         description: "We are a non-custodial wallet, this means we can never access your funds"
       },
       {
-        title: "Secure Transactions",
-        description: "Bank-grade security for all your transactions and personal data"
+        title: "Spend abroad and online",
+        description: "Generate virtual cards with Visa and USDC"
       },
       {
         title: "PIX + Open Finance = ❤️",
@@ -28,8 +28,8 @@ const translations = {
         description: "Somos uma carteira não custodial, isso significa que nunca podemos acessar seus fundos"
       },
       {
-        title: "Transações Seguras",
-        description: "Segurança de nível bancário para todas as suas transações e dados pessoais"
+        title: "Gaste no exterior e online",
+        description: "Gere cartões virtuais com Visa e USDC"
       },
       {
         title: "PIX + Open Finance = ❤️",
