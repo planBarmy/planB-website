@@ -4,14 +4,14 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 20 14.3% 4.1%;
+    --background: #FFFFFF;
+    --foreground: #141413;
     --radius: 1.2rem;
   }
 
   :root[class~="dark"] {
-    --background: 0 0% 6.7%;
-    --foreground: 0 0% 100%;
+    --background: #0F1115;
+    --foreground: #FFFFFF;
   }
 }
 

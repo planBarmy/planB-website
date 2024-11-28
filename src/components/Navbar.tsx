@@ -7,7 +7,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-black dark:bg-black bg-white/90 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-background">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div>
           <img 
@@ -16,7 +16,7 @@ const Navbar = () => {
               : "/lovable-uploads/bf691c30-de5e-42c8-b57c-30eb658d5974.png"
             } 
             alt="PlanB Logo" 
-            className={`h-12 ${theme === 'light' ? 'invert' : ''}`}
+            className="h-12"
           />
         </div>
         <div className="flex items-center gap-4">
@@ -24,7 +24,7 @@ const Navbar = () => {
             variant="ghost"
             size="icon"
             onClick={toggleTheme}
-            className="text-black dark:text-white"
+            className="text-foreground"
           >
             {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </Button>
