@@ -9,15 +9,31 @@ import {
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const WaitlistDialog = () => {
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send this to your backend
-    toast.success("You've been added to the waitlist!");
-    setEmail("");
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from('waitlist')
+        .insert([{ email }]);
+
+      if (error) throw error;
+
+      toast.success("You've been added to the waitlist!");
+      setEmail("");
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error("Failed to join waitlist. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -43,10 +59,15 @@ const WaitlistDialog = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              disabled={isSubmitting}
             />
           </div>
-          <Button type="submit" className="w-full bg-[#F7931A] text-white hover:bg-[#E88A19]">
-            Join now
+          <Button 
+            type="submit" 
+            className="w-full bg-[#F7931A] text-white hover:bg-[#E88A19]"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Joining..." : "Join now"}
           </Button>
         </form>
       </DialogContent>
