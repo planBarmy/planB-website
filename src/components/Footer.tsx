@@ -1,5 +1,6 @@
 import { Github, Twitter, Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -25,9 +26,17 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-white/10">
-          <p className="text-center text-white/60">
-            © 2024 PlanB. All rights reserved.
-          </p>
+          <div className="flex justify-between items-center">
+            <p className="text-white/60">
+              © 2024 PlanB. All rights reserved.
+            </p>
+            <Link 
+              to="/admin" 
+              className="text-xs text-white/20 hover:text-white/40 transition-colors"
+            >
+              Admin
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
