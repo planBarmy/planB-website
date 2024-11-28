@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { CreditCard, Shield } from "lucide-react";
+import { Shield, CreditCard } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
@@ -47,12 +47,12 @@ const Features = () => {
 
   const features = [
     {
-      icon: <CreditCard className="w-6 h-6 dark:text-white text-black" />,
+      icon: <Shield className="w-6 h-6 dark:text-white text-black" />,
       title: t.features[0].title,
       description: t.features[0].description
     },
     {
-      icon: <Shield className="w-6 h-6 dark:text-white text-black" />,
+      icon: <CreditCard className="w-6 h-6 dark:text-white text-black" />,
       title: t.features[1].title,
       description: t.features[1].description
     },
