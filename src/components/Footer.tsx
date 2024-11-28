@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-white">PlanB</h3>
             <p className="text-white/60">
-              Redefining the future of financial management with innovative solutions.
+              It's always good to have a planB
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="icon" className="hover:bg-white/10">
