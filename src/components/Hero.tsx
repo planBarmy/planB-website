@@ -8,9 +8,10 @@ const Hero = () => {
           <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
             The Bitcoin Machine
           </h1>
-          <p className="text-lg text-white/80 max-w-xl">
-            planB is the best way to convert your BRL to BTC. Exit the inflationary system and create your wealth with us.
-          </p>
+          <div className="space-y-4">
+            <p className="text-lg text-white/80">planB is the best way to convert your BRL to BTC.</p>
+            <p className="text-lg text-white/80 max-w-xl">Exit the inflationary system and create your wealth with us.</p>
+          </div>
           <WaitlistDialog />
           <div className="grid grid-cols-3 gap-8 pt-8">
             <div>
