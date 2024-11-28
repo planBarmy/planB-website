@@ -7,14 +7,14 @@ const translations = {
   en: {
     title: "planB",
     subtitle: "It's always good to have a planB",
-    copyright: "© 2024 PlanB. All rights reserved.",
+    copyright: "© 2024 planB. All rights reserved.",
     switchLanguage: "Mudar para Português",
     builtWith: "Built with 🧠 + 🤖 in 🇧🇷 and 🇦🇷"
   },
   "pt-BR": {
     title: "planB",
     subtitle: "É sempre bom ter um planB",
-    copyright: "© 2024 PlanB. Todos os direitos reservados.",
+    copyright: "© 2024 planB. Todos os direitos reservados.",
     switchLanguage: "Switch to English",
     builtWith: "Feito com 🧠 + 🤖 no 🇧🇷"
   }
