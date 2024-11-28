@@ -9,14 +9,14 @@ const translations = {
     subtitle: "It's always good to have a planB",
     copyright: "© 2024 PlanB. All rights reserved.",
     switchLanguage: "Mudar para Português",
-    builtWith: "Built with 🤖 in 🇧🇷"
+    builtWith: "Built with 🧠 + 🤖 in 🇧🇷"
   },
   "pt-BR": {
     title: "PlanB",
     subtitle: "É sempre bom ter um planB",
     copyright: "© 2024 PlanB. Todos os direitos reservados.",
     switchLanguage: "Switch to English",
-    builtWith: "Feito com 🤖 no 🇧🇷"
+    builtWith: "Feito com 🧠 + 🤖 no 🇧🇷"
   }
 };
 
@@ -56,7 +56,7 @@ const Footer = () => {
               <p className="dark:text-white/60 text-black/60">
                 {t.copyright}
               </p>
-              <p className="dark:text-white/40 text-black/40 text-sm">
+              <p className="dark:text-white/60 text-black/60 font-bold">
                 {t.builtWith}
               </p>
             </div>
