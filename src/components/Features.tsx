@@ -1,10 +1,10 @@
 import { Card } from "@/components/ui/card";
-import { Wallet, Shield } from "lucide-react";
+import { CreditCard, Shield } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
-      icon: <Wallet className="w-6 h-6 text-white" />,
+      icon: <CreditCard className="w-6 h-6 text-white" />,
       title: "Your keys, your Bitcoins",
       description: "We are a non-custodial wallet, this means we can never access your funds"
     },
