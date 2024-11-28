@@ -25,7 +25,10 @@ const WaitlistDialog = () => {
         .from('waitlist')
         .insert([{ email }]);
 
-      if (error) throw error;
+      if (error) {
+        console.error('Supabase error:', error);
+        throw error;
+      }
 
       toast.success("You've been added to the waitlist!");
       setEmail("");
