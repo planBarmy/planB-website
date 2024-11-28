@@ -12,7 +12,9 @@ const Download = () => {
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
             Join our community and receive an early adopter invitation to our app
           </p>
-          <WaitlistDialog />
+          <div className="flex justify-center">
+            <WaitlistDialog />
+          </div>
         </div>
       </div>
     </div>
