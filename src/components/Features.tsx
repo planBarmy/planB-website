@@ -27,7 +27,7 @@ const Features = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-white">
-              All the experience in the new application
+              Built over next-gen tech
             </h2>
             <p className="text-xl text-white/60">
               Simple transfers, payments for utilities, functional statements, card settings, for which you used to have to go to the branch online-banking
