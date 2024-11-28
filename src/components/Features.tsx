@@ -30,7 +30,7 @@ const Features = () => {
               Built over next-gen tech
             </h2>
             <p className="text-xl text-white/60">
-              Our application uses best-in class providers, so we can offer the best experience with the lowest fees.
+              Automate your investments with us. Set a recurring buy (from hourly to monthly), and watch your wealth grow effortelesly.
             </p>
           </div>
           <div className="grid gap-6">
