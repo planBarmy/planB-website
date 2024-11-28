@@ -9,7 +9,7 @@ const translations = {
     subtitle: "It's always good to have a planB",
     copyright: "© 2024 PlanB. All rights reserved.",
     switchLanguage: "Mudar para Português",
-    builtWith: "Built with 🧠 + 🤖 in 🇧🇷"
+    builtWith: "Built with 🧠 + 🤖 in 🇧🇷 and 🇦🇷"
   },
   "pt-BR": {
     title: "PlanB",
