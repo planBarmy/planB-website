@@ -6,7 +6,7 @@ const Features = () => {
     {
       icon: <Wallet className="w-6 h-6 text-white" />,
       title: "Your keys, your Bitcoins",
-      description: "Manage your finances on the go with our secure mobile banking platform"
+      description: "We are a non-custodial wallet, this means we can never access your funds"
     },
     {
       icon: <Shield className="w-6 h-6 text-white" />,
