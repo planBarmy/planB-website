@@ -37,7 +37,7 @@ const LoginDialog = () => {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] bg-background">
         <DialogHeader>
-          <DialogTitle className="text-2xl">Sign in to Cardo</DialogTitle>
+          <DialogTitle className="text-2xl">Sign in to PlanB</DialogTitle>
           <DialogDescription>
             Enter your email and password to access your account
           </DialogDescription>
