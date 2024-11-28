@@ -9,15 +9,15 @@ const translations = {
     features: [
       {
         title: "Your keys, your Bitcoins",
-        description: "We are a non-custodial wallet, this means we can never access your funds"
+        description: "We are a non-custodial wallet,\nthis means we can never access your funds"
       },
       {
         title: "Spend in person, abroad or online",
-        description: "Generate virtual cards with your USD balance, or spend with your BTC over lightining ⚡️"
+        description: "Generate virtual cards with your USD balance,\nor spend with your BTC over lightining ⚡️"
       },
       {
         title: "PIX + Open Finance = ❤️",
-        description: "Automate your investments with us!\nSet a recurring buy - from hourly to monthly\nand watch your stack growing effortlessly"
+        description: "Automate your investments with us!\nSet a recurring buy - from hourly to monthly periods,\nand watch your stack growing effortlessly"
       }
     ]
   },
