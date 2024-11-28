@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import WaitlistDialog from "@/components/WaitlistDialog";
 
 const Hero = () => {
   return (
@@ -12,10 +11,7 @@ const Hero = () => {
           <p className="text-lg text-white/80 max-w-xl">
             planB is the best way to convert your BRL to BTC. Exit the inflationary system and create your wealth with us.
           </p>
-          <Button className="px-8 py-6 text-lg bg-white text-black hover:bg-white/90 flex items-center gap-2">
-            <Download className="w-5 h-5" />
-            Download Application
-          </Button>
+          <WaitlistDialog />
           <div className="grid grid-cols-3 gap-8 pt-8">
             <div>
               <div className="text-3xl font-bold text-white">5000+</div>
