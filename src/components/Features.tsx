@@ -15,7 +15,7 @@ const Features = () => {
     },
     {
       icon: <CreditCard className="w-6 h-6 text-white" />,
-      title: "Digital Cards",
+      title: "PIX + Open Finance = <3",
       description: "Virtual and physical cards with advanced control features"
     }
   ];
