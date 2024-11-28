@@ -10,7 +10,7 @@ const Download = () => {
             Ready to Start Your Bitcoin Journey?
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Join thousands of others who are already securing their financial future with PlanB. Don't miss out on the revolution.
+            Join our community and receive an early adopter invitation to our app
           </p>
           <WaitlistDialog />
         </div>
