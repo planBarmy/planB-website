@@ -36,7 +36,7 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/33e18bc5-55ad-457b-9212-ccd802be8c9a.png"
               alt="Bitcoin Funnel Illustration"
-              className="w-full h-auto object-contain bg-white/5 backdrop-blur-sm"
+              className="w-full h-auto object-contain bg-background backdrop-blur-sm"
             />
           </div>
           <div className="absolute -bottom-4 -right-4 w-72 h-72 bg-accent/20 rounded-full blur-3xl"></div>
