@@ -23,8 +23,8 @@ const WaitlistDialog = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="px-8 py-6 text-lg bg-white text-black hover:bg-white/90 flex items-center gap-2">
-          Join Waiting list
+        <Button className="px-8 py-6 text-lg bg-[#F7931A] text-white hover:bg-[#E88A19] flex items-center gap-2">
+          Join the waiting list
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] bg-background">
