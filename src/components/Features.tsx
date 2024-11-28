@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Wallet, Shield, CreditCard } from "lucide-react";
+import { Wallet, Shield } from "lucide-react";
 
 const Features = () => {
   const features = [
@@ -14,7 +14,7 @@ const Features = () => {
       description: "Bank-grade security for all your transactions and personal data"
     },
     {
-      icon: <CreditCard className="w-6 h-6 text-white" />,
+      icon: <img src="/lovable-uploads/660406c5-6dc8-409d-9cbe-8d6cf55a447e.png" alt="PIX + Open Finance" className="w-6 h-6 invert" />,
       title: "PIX + Open Finance = <3",
       description: "Virtual and physical cards with advanced control features"
     }
