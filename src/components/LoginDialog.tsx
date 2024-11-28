@@ -30,8 +30,8 @@ const LoginDialog = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="bg-[#F2FF44] text-black hover:bg-[#E2EF34]">
-          Sign in
+        <Button className="bg-[#F7931A] text-white hover:bg-[#E88A19]">
+          Waitlist
           <LogIn className="w-4 h-4 ml-2" />
         </Button>
       </DialogTrigger>
