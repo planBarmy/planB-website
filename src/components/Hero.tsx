@@ -10,7 +10,7 @@ const Hero = () => {
             The Bitcoin Machine
           </h1>
           <p className="text-lg text-white/80 max-w-xl">
-            Financial services, including P2P payments, balance check and top-ups - are now available from any mobile app, including all messaging ones.
+            planB is the best way to convert your BRL to BTC. Exit the inflationary system and create your wealth with us.
           </p>
           <Button className="px-8 py-6 text-lg bg-white text-black hover:bg-white/90 flex items-center gap-2">
             <Download className="w-5 h-5" />
