@@ -12,7 +12,7 @@ const translations = {
         description: "We are a non-custodial wallet, this means we can never access your funds"
       },
       {
-        title: "Spend abroad and online",
+        title: "Spend in person, abroad or online",
         description: "Generate virtual cards with Visa and USDC"
       },
       {
@@ -30,7 +30,7 @@ const translations = {
         description: "Somos uma carteira não custodial, isso significa que nunca podemos acessar seus fundos"
       },
       {
-        title: "Gaste no exterior e online",
+        title: "Gaste presencialmente, no exterior ou online",
         description: "Gere cartões virtuais com Visa e USDC"
       },
       {
