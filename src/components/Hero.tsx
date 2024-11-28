@@ -47,29 +47,29 @@ const Hero = () => {
   const t = translations[language];
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 pt-20 bg-background">
+    <div className="min-h-screen flex items-center justify-center px-4 pt-20 dark:bg-black bg-background">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
-          <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             {t.title}
           </h1>
           <div className="space-y-2">
-            <p className="text-lg text-white/80">{t.subtitle}</p>
-            <p className="text-lg text-white/80 max-w-xl">{t.description}</p>
+            <p className="text-lg opacity-80">{t.subtitle}</p>
+            <p className="text-lg opacity-80 max-w-xl">{t.description}</p>
           </div>
           <WaitlistDialog />
           <div className="grid grid-cols-3 gap-8 pt-8">
             <div>
-              <div className="text-3xl font-bold text-white">{t.stats.wallet.title}</div>
-              <div className="text-white/60">{t.stats.wallet.subtitle}</div>
+              <div className="text-3xl font-bold">{t.stats.wallet.title}</div>
+              <div className="opacity-60">{t.stats.wallet.subtitle}</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">{t.stats.withdrawals.title}</div>
-              <div className="text-white/60">{t.stats.withdrawals.subtitle}</div>
+              <div className="text-3xl font-bold">{t.stats.withdrawals.title}</div>
+              <div className="opacity-60">{t.stats.withdrawals.subtitle}</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">{t.stats.security.title}</div>
-              <div className="text-white/60">{t.stats.security.subtitle}</div>
+              <div className="text-3xl font-bold">{t.stats.security.title}</div>
+              <div className="opacity-60">{t.stats.security.subtitle}</div>
             </div>
           </div>
         </div>
