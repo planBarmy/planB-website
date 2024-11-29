@@ -1,15 +1,25 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { format } from "date-fns";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
+import { RefreshCw, Trash2 } from "lucide-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 const Admin = () => {
   const [password, setPassword] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const { toast } = useToast();
+  const queryClient = useQueryClient();
 
   const { data: waitlist, isLoading } = useQuery({
     queryKey: ["waitlist"],
@@ -22,7 +32,7 @@ const Admin = () => {
       if (error) throw error;
       return data;
     },
-    enabled: isAuthenticated, // Only fetch data when authenticated
+    enabled: isAuthenticated,
   });
 
   const handleLogin = () => {
@@ -35,6 +45,35 @@ const Admin = () => {
         description: "Please try again with the correct password.",
       });
       setPassword("");
+    }
+  };
+
+  const handleRefresh = () => {
+    queryClient.invalidateQueries({ queryKey: ["waitlist"] });
+    toast({
+      title: "Refreshed",
+      description: "The waitlist has been refreshed.",
+    });
+  };
+
+  const handleDelete = async (id: string, email: string) => {
+    const { error } = await supabase
+      .from("waitlist")
+      .delete()
+      .eq("id", id);
+
+    if (error) {
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: "Failed to delete the entry. Please try again.",
+      });
+    } else {
+      queryClient.invalidateQueries({ queryKey: ["waitlist"] });
+      toast({
+        title: "Deleted",
+        description: `${email} has been removed from the waitlist.`,
+      });
     }
   };
 
@@ -70,32 +109,53 @@ const Admin = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">Waitlist Entries</h1>
-          <Button 
-            variant="outline"
-            onClick={() => setIsAuthenticated(false)}
-          >
-            Logout
-          </Button>
+          <div className="flex gap-2">
+            <Button 
+              variant="outline"
+              onClick={handleRefresh}
+              className="flex items-center gap-2"
+            >
+              <RefreshCw className="h-4 w-4" />
+              Refresh
+            </Button>
+            <Button 
+              variant="outline"
+              onClick={() => setIsAuthenticated(false)}
+            >
+              Logout
+            </Button>
+          </div>
         </div>
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className="border-b">
-                <th className="text-left p-4">Email</th>
-                <th className="text-left p-4">Joined At</th>
-              </tr>
-            </thead>
-            <tbody>
+        <div className="rounded-md border">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Email</TableHead>
+                <TableHead>Joined At</TableHead>
+                <TableHead className="w-[100px]">Actions</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
               {waitlist?.map((entry) => (
-                <tr key={entry.id} className="border-b">
-                  <td className="p-4">{entry.email}</td>
-                  <td className="p-4">
+                <TableRow key={entry.id}>
+                  <TableCell>{entry.email}</TableCell>
+                  <TableCell>
                     {format(new Date(entry.created_at), "PPpp")}
-                  </td>
-                </tr>
+                  </TableCell>
+                  <TableCell>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      onClick={() => handleDelete(entry.id, entry.email)}
+                      className="h-8 w-8"
+                    >
+                      <Trash2 className="h-4 w-4" />
+                    </Button>
+                  </TableCell>
+                </TableRow>
               ))}
-            </tbody>
-          </table>
+            </TableBody>
+          </Table>
         </div>
       </div>
     </div>
