@@ -44,9 +44,15 @@ const Footer = () => {
             <Button variant="ghost" size="icon" className="hover:bg-white/10">
               <Github className="w-5 h-5 dark:text-white text-black" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-white/10">
-              <Linkedin className="w-5 h-5 dark:text-white text-black" />
-            </Button>
+            <a 
+              href="https://www.linkedin.com/company/planbexchange" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button variant="ghost" size="icon" className="hover:bg-white/10">
+                <Linkedin className="w-5 h-5 dark:text-white text-black" />
+              </Button>
+            </a>
           </div>
         </div>
         
