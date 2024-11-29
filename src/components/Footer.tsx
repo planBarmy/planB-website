@@ -1,4 +1,4 @@
-import { Linkedin } from "lucide-react";
+import { Linkedin, Flag } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -63,9 +63,10 @@ const Footer = () => {
             <div className="flex items-center gap-4">
               <Button
                 variant="ghost"
-                className="dark:text-white/60 text-black/60 hover:text-black dark:hover:text-white"
+                className="dark:text-white/60 text-black/60 hover:text-black dark:hover:text-white flex items-center gap-2"
                 onClick={toggleLanguage}
               >
+                <Flag className="w-4 h-4" />
                 {t.switchLanguage}
               </Button>
               <Link 
