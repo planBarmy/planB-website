@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -38,12 +38,6 @@ const Footer = () => {
             {t.subtitle}
           </p>
           <div className="flex space-x-4">
-            <Button variant="ghost" size="icon" className="hover:bg-white/10">
-              <Twitter className="w-5 h-5 dark:text-white text-black" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-white/10">
-              <Github className="w-5 h-5 dark:text-white text-black" />
-            </Button>
             <a 
               href="https://www.linkedin.com/company/planbexchange" 
               target="_blank" 
