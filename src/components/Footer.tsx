@@ -1,4 +1,4 @@
-import { Linkedin, Flag } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -8,14 +8,14 @@ const translations = {
     title: "planB",
     subtitle: "It's always good to have a planB",
     copyright: "© 2024 planB. All rights reserved.",
-    switchLanguage: "Mudar para Português",
+    switchLanguage: "Mudar para Português 🇧🇷",
     builtWith: "Built with 🧠 + 🤖 in 🇧🇷 and 🇦🇷"
   },
   "pt-BR": {
     title: "planB",
     subtitle: "É sempre bom ter um planB",
     copyright: "© 2024 planB. Todos os direitos reservados.",
-    switchLanguage: "Switch to English",
+    switchLanguage: "Switch to English 🇺🇸",
     builtWith: "Feito com 🧠 + 🤖 no 🇧🇷"
   }
 };
@@ -63,10 +63,9 @@ const Footer = () => {
             <div className="flex items-center gap-4">
               <Button
                 variant="ghost"
-                className="dark:text-white/60 text-black/60 hover:text-black dark:hover:text-white flex items-center gap-2"
+                className="dark:text-white/60 text-black/60 hover:text-black dark:hover:text-white"
                 onClick={toggleLanguage}
               >
-                <Flag className="w-4 h-4" />
                 {t.switchLanguage}
               </Button>
               <Link 
