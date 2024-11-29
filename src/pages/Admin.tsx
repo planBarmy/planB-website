@@ -4,7 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { format } from "date-fns";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import { RefreshCw, Trash2 } from "lucide-react";
 import {
   Table,
@@ -14,10 +14,22 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 
 const Admin = () => {
   const [password, setPassword] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
+  const [selectedEntry, setSelectedEntry] = useState<{ id: string; email: string } | null>(null);
   const { toast } = useToast();
   const queryClient = useQueryClient();
 
@@ -56,11 +68,18 @@ const Admin = () => {
     });
   };
 
-  const handleDelete = async (id: string, email: string) => {
+  const handleDeleteClick = (id: string, email: string) => {
+    setSelectedEntry({ id, email });
+    setDeleteDialogOpen(true);
+  };
+
+  const handleDelete = async () => {
+    if (!selectedEntry) return;
+
     const { error } = await supabase
       .from("waitlist")
       .delete()
-      .eq("id", id);
+      .eq("id", selectedEntry.id);
 
     if (error) {
       toast({
@@ -72,9 +91,11 @@ const Admin = () => {
       queryClient.invalidateQueries({ queryKey: ["waitlist"] });
       toast({
         title: "Deleted",
-        description: `${email} has been removed from the waitlist.`,
+        description: `${selectedEntry.email} has been removed from the waitlist.`,
       });
     }
+    setDeleteDialogOpen(false);
+    setSelectedEntry(null);
   };
 
   if (!isAuthenticated) {
@@ -146,7 +167,7 @@ const Admin = () => {
                     <Button
                       variant="ghost"
                       size="icon"
-                      onClick={() => handleDelete(entry.id, entry.email)}
+                      onClick={() => handleDeleteClick(entry.id, entry.email)}
                       className="h-8 w-8"
                     >
                       <Trash2 className="h-4 w-4" />
@@ -158,6 +179,21 @@ const Admin = () => {
           </Table>
         </div>
       </div>
+
+      <AlertDialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+            <AlertDialogDescription>
+              Are you sure you want to delete "{selectedEntry?.email}" from the waiting list?
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>No</AlertDialogCancel>
+            <AlertDialogAction onClick={handleDelete}>Yes</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 };
