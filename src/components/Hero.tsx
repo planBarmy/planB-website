@@ -3,7 +3,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   en: {
-    title: "The Bitcoin Machine",
+    titleStart: "The ",
+    titleHighlight: "Bitcoin",
+    titleEnd: " Machine",
     subtitle: "planB is the best way to convert your BRL to BTC.",
     description: "Exit the inflationary system and build your wealth with us.",
     stats: {
@@ -22,7 +24,9 @@ const translations = {
     }
   },
   "pt-BR": {
-    title: "Fuja do Real, compre Bitcoin",
+    titleStart: "Fuja do Real, compre ",
+    titleHighlight: "Bitcoin",
+    titleEnd: "",
     subtitle: "planB é a melhor maneira de converter seu BRL para BTC.",
     description: "Saia do sistema inflacionário e crie sua riqueza conosco.",
     stats: {
@@ -51,7 +55,11 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-            {t.title}
+            {t.titleStart}
+            <span className="bg-gradient-to-r from-[#FF8A00] via-[#FF6B00] to-[#FF4D00] text-transparent bg-clip-text">
+              {t.titleHighlight}
+            </span>
+            {t.titleEnd}
           </h1>
           <div className="space-y-2">
             <p className="text-lg opacity-80">{t.subtitle}</p>
