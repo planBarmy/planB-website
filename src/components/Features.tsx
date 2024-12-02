@@ -22,7 +22,7 @@ const translations = {
     ]
   },
   "pt-BR": {
-    title: "Construído com tecnologia de última geração",
+    title: "Feito com tecnologia de última geração",
     subtitle: "Para você construir sua riqueza do futuro",
     features: [
       {
@@ -35,7 +35,7 @@ const translations = {
       },
       {
         title: "PIX + Open Finance = ❤️",
-        description: "Automatize seus investimentos conosco!\nDefina uma compra recorrente - de hora em hora até mensal\ne veja sua stack crescer sem esforço"
+        description: "Automatize seus investimentos\nDefina uma compra recorrente - de hora em hora até mensalmente\ne veja sua stack crescer sem esforço algum"
       }
     ]
   }
