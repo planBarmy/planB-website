@@ -22,7 +22,7 @@ const translations = {
     }
   },
   "pt-BR": {
-    title: "A Máquina de Bitcoin",
+    title: "Fuja do Real, compre Bitcoin",
     subtitle: "planB é a melhor maneira de converter seu BRL para BTC.",
     description: "Saia do sistema inflacionário e crie sua riqueza conosco.",
     stats: {
