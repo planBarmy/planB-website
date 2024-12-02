@@ -31,16 +31,16 @@ const translations = {
     description: "Saia do sistema inflacionário e crie sua riqueza conosco.",
     stats: {
       wallet: {
-        title: "Grátis",
-        subtitle: "Criação de carteira"
+        title: "100% BTC",
+        subtitle: "App simples e direto"
       },
       withdrawals: {
-        title: "On-chain",
-        subtitle: "Saques"
+        title: "Saques",
+        subtitle: "On-chain"
       },
       security: {
-        title: "Seguro",
-        subtitle: "Código aberto"
+        title: "Código Aberto",
+        subtitle: "Auditado e seguro"
       }
     }
   }
