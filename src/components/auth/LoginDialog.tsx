@@ -1,4 +1,4 @@
-import WaitlistDialog from "./WaitlistDialog";
+import WaitlistDialog from "@/components/auth/WaitlistDialog";
 
 const LoginDialog = () => {
   return <WaitlistDialog />;
