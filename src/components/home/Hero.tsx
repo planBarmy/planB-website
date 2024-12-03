@@ -4,7 +4,7 @@ import HeroStats from "./HeroStats";
 
 const translations = {
   en: {
-    titleStart: "Be unstoppable",
+    titleStart: "Be unstoppable,",
     titleMiddle: "buy ",
     titleHighlight: "Bitcoin",
     titleEnd: "",
@@ -12,12 +12,12 @@ const translations = {
     description: "Exit the inflationary system and build your wealth with us."
   },
   "pt-BR": {
-    titleStart: "Seja imparável,",
+    titleStart: "Seja livre,",
     titleMiddle: "compre ",
     titleHighlight: "Bitcoin",
     titleEnd: "",
     subtitle: "planB é a melhor maneira de converter seu BRL para BTC.",
-    description: "Saia do sistema inflacionário e crie sua riqueza conosco."
+    description: "Fuja do Real inflacionário e construa sua riqueza."
   }
 };
 
