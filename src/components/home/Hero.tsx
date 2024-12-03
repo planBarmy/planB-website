@@ -4,16 +4,16 @@ import HeroStats from "./HeroStats";
 
 const translations = {
   en: {
-    titleStart: "The ",
-    titleHighlight: "Bitcoin",
-    titleEnd: " Machine",
+    titleStart: "Be unstoppable",
+    titleHighlight: "buy",
+    titleEnd: " Bitcoin",
     subtitle: "planB is the best way to convert your BRL to BTC.",
     description: "Exit the inflationary system and build your wealth with us."
   },
   "pt-BR": {
-    titleStart: "Fuja do Real, compre ",
-    titleHighlight: "Bitcoin",
-    titleEnd: "",
+    titleStart: "Seja imparável,",
+    titleHighlight: "compre",
+    titleEnd: " Bitcoin",
     subtitle: "planB é a melhor maneira de converter seu BRL para BTC.",
     description: "Saia do sistema inflacionário e crie sua riqueza conosco."
   }
@@ -29,6 +29,7 @@ const Hero = () => {
         <div className="space-y-8">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             {t.titleStart}
+            <br />
             <span className="bg-gradient-to-r from-[#FF8A00] via-[#FF6B00] to-[#FF4D00] text-transparent bg-clip-text">
               {t.titleHighlight}
             </span>
