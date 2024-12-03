@@ -44,8 +44,8 @@ const Hero = () => {
         <div className="relative">
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="/lovable-uploads/87a1f9f1-2cab-4a50-b92b-059d28c8c369.png"
-              alt="Bitcoin Machine Illustration"
+              src="/lovable-uploads/6763a7cb-2ea7-4a9d-bc0a-a9c208a68c55.png"
+              alt="Bitcoin Rebellion Illustration"
               className="w-full h-auto object-contain bg-background backdrop-blur-sm"
             />
           </div>
