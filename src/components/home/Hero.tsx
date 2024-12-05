@@ -9,7 +9,8 @@ const translations = {
     titleHighlight: "Bitcoin",
     titleEnd: "",
     subtitle: "planB is the best way to convert your BRL to BTC.",
-    description: "Exit the inflationary system and build your wealth with us."
+    description: "Exit the inflationary system and build your wealth with us.",
+    buttonText: "Join the waiting list"
   },
   "pt-BR": {
     titleStart: "Seja livre,",
@@ -17,7 +18,8 @@ const translations = {
     titleHighlight: "Bitcoin",
     titleEnd: "",
     subtitle: "planB é a melhor maneira de converter seu BRL para BTC.",
-    description: "Fuja do Real inflacionário e construa seu patrimônio conosco."
+    description: "Fuja do Real inflacionário e construa seu patrimônio conosco.",
+    buttonText: "Entre na lista de espera"
   }
 };
 
