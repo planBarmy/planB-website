@@ -1,6 +1,6 @@
+import { Card } from "@/components/ui/card";
 import { Shield, CreditCard } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import FeatureCard from "./FeatureCard";
 
 const translations = {
   en: {
@@ -47,43 +47,49 @@ const Features = () => {
 
   const features = [
     {
-      icon: <Shield className="w-6 h-6 dark:text-white text-black" />,
+      icon: <Shield className="w-5 h-5" />,
       title: t.features[0].title,
       description: t.features[0].description
     },
     {
-      icon: <CreditCard className="w-6 h-6 dark:text-white text-black" />,
+      icon: <CreditCard className="w-5 h-5" />,
       title: t.features[1].title,
       description: t.features[1].description
     },
     {
-      icon: <img src="/lovable-uploads/660406c5-6dc8-409d-9cbe-8d6cf55a447e.png" alt="PIX + Open Finance" className="w-6 h-6 dark:invert" />,
+      icon: <img src="/lovable-uploads/660406c5-6dc8-409d-9cbe-8d6cf55a447e.png" alt="PIX + Open Finance" className="w-5 h-5 dark:invert" />,
       title: t.features[2].title,
       description: t.features[2].description
     }
   ];
 
   return (
-    <div className="py-20 px-4 bg-background relative overflow-hidden">
-      <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <h2 className="text-4xl font-bold dark:text-white text-black">
+    <div className="py-16 px-4 bg-background relative">
+      <div className="absolute inset-0 bg-accent/5"></div>
+      <div className="max-w-6xl mx-auto relative z-10">
+        <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold">
               {t.title}
             </h2>
-            <p className="text-2xl dark:text-white/80 text-black/80 font-medium">
+            <p className="text-xl opacity-80">
               {t.subtitle}
             </p>
           </div>
-          <div className="grid gap-6">
+          <div className="grid gap-4">
             {features.map((feature, index) => (
-              <FeatureCard 
-                key={index}
-                icon={feature.icon}
-                title={feature.title}
-                description={feature.description}
-              />
+              <Card 
+                key={index} 
+                className="p-4 hover-lift glass-effect flex items-start gap-3"
+              >
+                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                  {feature.icon}
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-1">{feature.title}</h3>
+                  <p className="opacity-60 text-sm whitespace-pre-line">{feature.description}</p>
+                </div>
+              </Card>
             ))}
           </div>
         </div>
