@@ -34,9 +34,9 @@ const Hero = () => {
   const t = translations[language];
 
   return (
-    <div className="h-screen flex items-center justify-center px-4 dark:bg-black bg-background">
+    <div className="min-h-screen flex items-center justify-center px-4 dark:bg-black bg-background pt-20 md:pt-0">
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="w-full max-w-xl space-y-6">
+        <div className="w-full max-w-xl space-y-6 mt-16 md:mt-0">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             {t.titleStart}
             <br />
