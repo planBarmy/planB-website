@@ -22,7 +22,7 @@ const translations = {
     ]
   },
   "pt-BR": {
-    title: "Feito com tecnologia de última geração",
+    title: "Feito com tech de última geração",
     subtitle: "Para você construir sua riqueza do futuro",
     features: [
       {
