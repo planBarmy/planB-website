@@ -1,6 +1,5 @@
 import WaitlistDialog from "@/components/auth/WaitlistDialog";
 import { useLanguage } from "@/contexts/LanguageContext";
-import HeroStats from "./HeroStats";
 
 const translations = {
   en: {
