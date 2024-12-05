@@ -3,14 +3,13 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   en: {
-    title: "Ready to Start Your Bitcoin Journey?",
     subtitle: (
       <>
         <a 
           href="https://planb.flarum.cloud/" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-[#FF6B00] hover:text-[#FF4D00] transition-colors"
+          className="text-4xl md:text-5xl font-bold text-[#FF6B00] hover:text-[#FF4D00] transition-colors"
         >
           Join our community and win <span className="text-[#FF6B00]">sats</span> by contributing with new ideas!
         </a>
@@ -18,15 +17,13 @@ const translations = {
     )
   },
   "pt-BR": {
-    title: "Pronto para Começar sua Jornada Bitcoin?",
     subtitle: (
       <>
-        Junte-se a nossa comunidade.{" "}
         <a 
           href="https://planb.flarum.cloud/" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-[#FF6B00] hover:text-[#FF4D00] transition-colors"
+          className="text-4xl md:text-5xl font-bold text-[#FF6B00] hover:text-[#FF4D00] transition-colors"
         >
           Participe do nosso fórum e receba prêmios em <span className="text-[#FF6B00]">sats</span> sugerindo suas ideias!
         </a>
@@ -44,9 +41,6 @@ const Download = () => {
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center space-y-8">
-          <h2 className="text-4xl md:text-5xl font-bold dark:text-white text-black">
-            {t.title}
-          </h2>
           <p className="text-xl dark:text-white/60 text-black/60 max-w-2xl mx-auto">
             {t.subtitle}
           </p>
