@@ -12,10 +12,8 @@ const translations = {
           rel="noopener noreferrer"
           className="text-[#FF6B00] hover:text-[#FF4D00] transition-colors"
         >
-          Join our community
-        </a>{" "}
-        and win{" "}
-        <span className="text-[#FF6B00]">sats</span> by contributing with new ideas!
+          Join our community and win <span className="text-[#FF6B00]">sats</span> by contributing with new ideas!
+        </a>
       </>
     )
   },
@@ -30,10 +28,8 @@ const translations = {
           rel="noopener noreferrer"
           className="text-[#FF6B00] hover:text-[#FF4D00] transition-colors"
         >
-          Participe do nosso fórum
-        </a>{" "}
-        e receba prêmios em{" "}
-        <span className="text-[#FF6B00]">sats</span> sugerindo suas ideias!
+          Participe do nosso fórum e receba prêmios em <span className="text-[#FF6B00]">sats</span> sugerindo suas ideias!
+        </a>
       </>
     )
   }
