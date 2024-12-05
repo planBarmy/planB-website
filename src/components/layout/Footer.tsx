@@ -8,25 +8,19 @@ const translations = {
     title: "planB",
     subtitle: "It's always good to have a planB",
     copyright: "© 2024 planB. All rights reserved.",
-    switchLanguage: "Mudar para Português 🇧🇷",
     builtWith: "Built with 🧠 + 🤖 in 🇧🇷 and 🇦🇷"
   },
   "pt-BR": {
     title: "planB",
     subtitle: "É sempre bom ter um planB",
     copyright: "© 2024 planB. Todos os direitos reservados.",
-    switchLanguage: "Switch to English 🇺🇸",
     builtWith: "Feito com 🧠 + 🤖 no 🇧🇷"
   }
 };
 
 const Footer = () => {
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
   const t = translations[language];
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'pt-BR' : 'en');
-  };
 
   return (
     <footer className="py-20 px-4 bg-background relative overflow-hidden">
@@ -60,21 +54,12 @@ const Footer = () => {
                 {t.builtWith}
               </p>
             </div>
-            <div className="flex items-center gap-4">
-              <Button
-                variant="ghost"
-                className="dark:text-white/60 text-black/60 hover:text-black dark:hover:text-white"
-                onClick={toggleLanguage}
-              >
-                {t.switchLanguage}
-              </Button>
-              <Link 
-                to="/admin" 
-                className="text-xs dark:text-white/20 text-black/20 hover:text-black/40 dark:hover:text-white/40 transition-colors"
-              >
-                Admin
-              </Link>
-            </div>
+            <Link 
+              to="/admin" 
+              className="text-xs dark:text-white/20 text-black/20 hover:text-black/40 dark:hover:text-white/40 transition-colors"
+            >
+              Admin
+            </Link>
           </div>
         </div>
       </div>

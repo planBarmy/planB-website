@@ -1,10 +1,16 @@
 import { Button } from "@/components/ui/button";
 import LoginDialog from "../auth/LoginDialog";
 import { useTheme } from "@/contexts/ThemeContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Moon, Sun } from "lucide-react";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
+  const { language, setLanguage } = useLanguage();
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'pt-BR' : 'en');
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 dark:bg-black bg-background">
@@ -20,6 +26,13 @@ const Navbar = () => {
           />
         </div>
         <div className="flex items-center gap-4">
+          <Button
+            variant="ghost"
+            className="text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white"
+            onClick={toggleLanguage}
+          >
+            {language === 'en' ? 'PT-BR 🇧🇷' : 'EN 🇺🇸'}
+          </Button>
           <Button
             variant="ghost"
             size="icon"
