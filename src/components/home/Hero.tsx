@@ -26,9 +26,9 @@ const Hero = () => {
   const t = translations[language];
 
   return (
-    <div className="min-h-[90vh] flex items-center justify-center px-4 pt-16 dark:bg-black bg-background">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-6">
+    <div className="h-screen flex items-center justify-center px-4 dark:bg-black bg-background">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="w-full max-w-xl space-y-6">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             {t.titleStart}
             <br />
@@ -45,7 +45,7 @@ const Hero = () => {
           <WaitlistDialog />
           <HeroStats />
         </div>
-        <div className="relative">
+        <div className="relative w-full">
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
               src="/lovable-uploads/6763a7cb-2ea7-4a9d-bc0a-a9c208a68c55.png"
