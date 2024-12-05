@@ -35,7 +35,7 @@ const translations = {
       },
       {
         title: "PIX + Open Finance = ❤️",
-        description: "Automatize seus investimentos\nDefina uma compra recorrente - de hora em hora até mensalmente\ne veja sua stack crescer sem esforço algum"
+        description: "Automatize seus investimentos\nDefina uma compra recorrente - de hora em hora até mensalmente e veja sua stack crescer sem esforço algum"
       }
     ]
   }
