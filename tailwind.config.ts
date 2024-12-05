@@ -52,7 +52,7 @@ export default {
           DEFAULT: "#FFFFFF",
           foreground: "#141413",
         },
-        'metallic-orange': '#c78000',
+        'metallic-orange': '#FF8A00',
       },
       borderRadius: {
         lg: "var(--radius)",
