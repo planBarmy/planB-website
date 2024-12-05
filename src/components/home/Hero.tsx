@@ -8,7 +8,11 @@ const translations = {
     titleMiddle: "buy ",
     titleHighlight: "Bitcoin",
     titleEnd: "",
-    subtitle: "planB is the best way to convert your BRL to BTC.",
+    subtitle: {
+      prefix: "",
+      highlight: "planB",
+      suffix: " is the best way to convert your BRL to BTC."
+    },
     description: "Exit the inflationary system and build your wealth with us."
   },
   "pt-BR": {
@@ -16,7 +20,11 @@ const translations = {
     titleMiddle: "compre ",
     titleHighlight: "Bitcoin",
     titleEnd: "",
-    subtitle: "planB é a melhor maneira de converter seu BRL para BTC.",
+    subtitle: {
+      prefix: "",
+      highlight: "planB",
+      suffix: " é a melhor maneira de converter seu BRL para BTC."
+    },
     description: "Fuja do Real inflacionário e construa seu patrimônio conosco."
   }
 };
@@ -39,7 +47,13 @@ const Hero = () => {
             {t.titleEnd}
           </h1>
           <div className="space-y-2 max-w-md">
-            <p className="text-lg opacity-80">{t.subtitle}</p>
+            <p className="text-lg opacity-80">
+              {t.subtitle.prefix}
+              <span className="font-bold bg-gradient-to-r from-gray-900 via-gray-600 to-gray-900 bg-clip-text text-transparent animate-shimmer bg-[length:200%_100%]">
+                {t.subtitle.highlight}
+              </span>
+              {t.subtitle.suffix}
+            </p>
             <p className="text-lg opacity-80">{t.description}</p>
           </div>
           <WaitlistDialog />
