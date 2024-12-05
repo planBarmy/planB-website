@@ -68,11 +68,12 @@ const Footer = () => {
               >
                 {t.switchLanguage}
               </Button>
-              <Link 
-                to="/admin" 
-                className="text-xs dark:text-white/20 text-black/20 hover:text-black/40 dark:hover:text-white/40 transition-colors"
-              >
-                Admin
+              <Link to="/admin" className="hover:opacity-80 transition-opacity">
+                <img 
+                  src="/lovable-uploads/4f2417e7-fadb-4ae7-928c-d280f53e7748.png" 
+                  alt="Admin Access" 
+                  className="w-16 h-16"
+                />
               </Link>
             </div>
           </div>
