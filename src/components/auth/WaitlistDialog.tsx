@@ -83,9 +83,17 @@ const WaitlistDialog = () => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button className="px-8 py-6 text-lg bg-[#F7931A] text-white hover:bg-[#E88A19] flex items-center gap-2">
-          {t.joinWaitlist}
-          <ArrowRight className="w-5 h-5" />
+        <Button 
+          className="group relative px-8 py-6 text-lg overflow-hidden rounded-xl bg-gradient-to-r from-[#FF8A00] via-[#FF6B00] to-[#FF4D00] 
+          text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl
+          before:absolute before:inset-0 before:bg-gradient-to-r before:from-[#FFB800] before:via-[#FF9500] before:to-[#FF7200] 
+          before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100
+          animate-shimmer"
+        >
+          <span className="relative flex items-center gap-2">
+            {t.joinWaitlist}
+            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+          </span>
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] bg-background">
@@ -109,11 +117,17 @@ const WaitlistDialog = () => {
           </div>
           <Button 
             type="submit" 
-            className="w-full bg-[#F7931A] text-white hover:bg-[#E88A19] flex items-center justify-center gap-2"
+            className="w-full group relative overflow-hidden rounded-xl bg-gradient-to-r from-[#FF8A00] via-[#FF6B00] to-[#FF4D00] 
+            text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl
+            before:absolute before:inset-0 before:bg-gradient-to-r before:from-[#FFB800] before:via-[#FF9500] before:to-[#FF7200] 
+            before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100
+            animate-shimmer flex items-center justify-center gap-2"
             disabled={isSubmitting}
           >
-            {isSubmitting ? t.joining : t.joinNow}
-            <ArrowRight className="w-5 h-5" />
+            <span className="relative flex items-center gap-2">
+              {isSubmitting ? t.joining : t.joinNow}
+              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </span>
           </Button>
         </form>
       </DialogContent>
