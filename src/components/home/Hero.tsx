@@ -10,7 +10,7 @@ const translations = {
     titleEnd: "",
     subtitle: {
       prefix: "",
-      highlight: "plano B",
+      highlight: "planB",
       suffix: " is the best way to convert your BRL to BTC."
     },
     description: "Exit the inflationary system and build your wealth with us."
@@ -22,7 +22,7 @@ const translations = {
     titleEnd: "",
     subtitle: {
       prefix: "",
-      highlight: "plano B",
+      highlight: "planB",
       suffix: " é a melhor maneira de converter seu BRL para BTC."
     },
     description: "Fuja do Real inflacionário e construa seu patrimônio conosco."
