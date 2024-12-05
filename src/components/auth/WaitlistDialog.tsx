@@ -15,7 +15,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   en: {
-    joinWaitlist: "We'll only notify when the app goes live",
+    joinWaitlist: "Get beta access",
     joinNow: "LFG!!!",
     joining: "Joining...",
     email: "Email",
@@ -28,7 +28,7 @@ const translations = {
     }
   },
   "pt-BR": {
-    joinWaitlist: "Vamos notificar apenas quando o app estiver no ar",
+    joinWaitlist: "Acesso ao beta",
     joinNow: "LFG!!!",
     joining: "Entrando...",
     email: "E-mail",
