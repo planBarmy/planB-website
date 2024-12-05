@@ -41,7 +41,7 @@ const Hero = () => {
             {t.titleStart}
             <br />
             {t.titleMiddle}
-            <span className="bg-gradient-to-r from-[#FF8A00] via-[#FF6B00] to-[#FF4D00] text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-[#FF8A00] via-[#FF6B00] to-[#FF4D00] dark:from-metallic-orange dark:via-metallic-orange dark:to-metallic-orange text-transparent bg-clip-text">
               {t.titleHighlight}
             </span>
             {t.titleEnd}
@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="space-y-2 max-w-md">
             <p className="text-lg opacity-80">
               {t.subtitle.prefix}
-              <span className="font-bold bg-gradient-to-r from-gray-900 via-gray-600 to-gray-900 bg-clip-text text-transparent animate-shimmer bg-[length:200%_100%]">
+              <span className="font-bold bg-gradient-to-r from-gray-900 via-gray-600 to-gray-900 dark:from-metallic-orange dark:via-metallic-orange dark:to-metallic-orange bg-clip-text text-transparent animate-shimmer bg-[length:200%_100%]">
                 {t.subtitle.highlight}
               </span>
               {t.subtitle.suffix}
