@@ -4,11 +4,38 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const translations = {
   en: {
     title: "Ready to Start Your Bitcoin Journey?",
-    subtitle: "Join our community and receive an early adopter invitation to our app"
+    subtitle: (
+      <>
+        <a 
+          href="https://planb.flarum.cloud/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-[#FF6B00] hover:text-[#FF4D00] transition-colors"
+        >
+          Join our community
+        </a>{" "}
+        and win{" "}
+        <span className="text-[#FF6B00]">sats</span> by contributing with new ideas!
+      </>
+    )
   },
   "pt-BR": {
     title: "Pronto para Começar sua Jornada Bitcoin?",
-    subtitle: "Junte-se à nossa comunidade e receba um convite de adoção antecipada para nosso aplicativo"
+    subtitle: (
+      <>
+        Junte-se a nossa comunidade.{" "}
+        <a 
+          href="https://planb.flarum.cloud/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-[#FF6B00] hover:text-[#FF4D00] transition-colors"
+        >
+          Participe do nosso fórum
+        </a>{" "}
+        e receba prêmios em{" "}
+        <span className="text-[#FF6B00]">sats</span> sugerindo suas ideias!
+      </>
+    )
   }
 };
 
