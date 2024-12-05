@@ -16,8 +16,8 @@ const translations = {
     titleMiddle: "compre ",
     titleHighlight: "Bitcoin",
     titleEnd: "",
-    subtitle: "planB é a melhor forma de converter BRL para BTC.",
-    description: "Saia do sistema inflacionário e construa seu patrimônio."
+    subtitle: "planB é a melhor maneira de converter seu BRL para BTC.",
+    description: "Fuja do Real inflacionário e construa seu patrimônio conosco."
   }
 };
 
