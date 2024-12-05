@@ -16,8 +16,8 @@ const translations = {
     titleMiddle: "compre ",
     titleHighlight: "Bitcoin",
     titleEnd: "",
-    subtitle: "planB é a melhor forma de converter BRL para BTC.",
-    description: "Saia do sistema inflacionário e construa seu patrimônio."
+    subtitle: "planB é a melhor maneira de converter seu BRL para BTC.",
+    description: "Fuja do Real inflacionário e construa seu patrimônio conosco."
   }
 };
 
@@ -26,9 +26,9 @@ const Hero = () => {
   const t = translations[language];
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 pt-20 dark:bg-black bg-background">
+    <div className="min-h-[90vh] flex items-center justify-center px-4 pt-16 dark:bg-black bg-background">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8">
+        <div className="space-y-6">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             {t.titleStart}
             <br />
