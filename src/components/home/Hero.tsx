@@ -9,15 +9,17 @@ const translations = {
     titleHighlight: "Bitcoin",
     titleEnd: "",
     subtitle: "planB is the best way to convert your BRL to BTC.",
-    description: "Exit the inflationary system and build your wealth with us."
+    description: "Exit the inflationary system and build your wealth with us.",
+    cta: "Get beta access"
   },
   "pt-BR": {
-    titleStart: "Seja livre,",
-    titleMiddle: "compre ",
+    titleStart: "Be unstoppable,",
+    titleMiddle: "buy ",
     titleHighlight: "Bitcoin",
     titleEnd: "",
     subtitle: "planB é a melhor maneira de converter seu BRL para BTC.",
-    description: "Fuja do Real inflacionário e construa seu patrimônio conosco."
+    description: "Fuja do Real inflacionário e construa seu patrimônio conosco.",
+    cta: "Acesso ao beta"
   }
 };
 
@@ -48,7 +50,7 @@ const Hero = () => {
         <div className="relative">
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="/lovable-uploads/6763a7cb-2ea7-4a9d-bc0a-a9c208a68c55.png"
+              src="/lovable-uploads/f0eb95f9-3f51-4295-bd4a-b38157df2541.png"
               alt="Bitcoin Rebellion Illustration"
               className="w-full h-auto object-contain bg-background backdrop-blur-sm"
             />
