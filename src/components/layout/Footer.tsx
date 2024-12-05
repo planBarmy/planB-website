@@ -5,15 +5,15 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   en: {
-    title: "planB",
-    subtitle: "It's always good to have a planB",
-    copyright: "© 2024 planB. All rights reserved.",
+    title: "plano B",
+    subtitle: "It's always good to have a plano B",
+    copyright: "© 2024 plano B. All rights reserved.",
     builtWith: "Built with 🧠 + 🤖 in 🇧🇷 and 🇦🇷"
   },
   "pt-BR": {
-    title: "planB",
-    subtitle: "É sempre bom ter um planB",
-    copyright: "© 2024 planB. Todos os direitos reservados.",
+    title: "plano B",
+    subtitle: "É sempre bom ter um plano B",
+    copyright: "© 2024 plano B. Todos os direitos reservados.",
     builtWith: "Feito com 🧠 + 🤖 no 🇧🇷"
   }
 };
