@@ -29,7 +29,7 @@ const Hero = () => {
     <div className="h-screen flex items-center justify-center px-4 dark:bg-black bg-background">
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="w-full max-w-xl space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             {t.titleStart}
             <br />
             {t.titleMiddle}
