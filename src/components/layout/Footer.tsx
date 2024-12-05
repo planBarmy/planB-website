@@ -6,7 +6,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const translations = {
   en: {
     title: "planB",
-    subtitle: "It's always good to have a plano B",
+    subtitle: "It's always good to have a planB",
     copyright: "© 2024 planB. All rights reserved.",
     builtWith: "Built with 🧠 + 🤖 in 🇧🇷 and 🇦🇷"
   },
