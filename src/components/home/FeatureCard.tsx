@@ -10,7 +10,7 @@ interface FeatureCardProps {
 const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
   return (
     <Card className="p-6 hover-lift glass-effect flex items-start gap-4 group transition-all duration-300">
-      <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+      <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
         {icon}
       </div>
       <div>

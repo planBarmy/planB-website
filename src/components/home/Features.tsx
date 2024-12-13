@@ -47,17 +47,17 @@ const Features = () => {
 
   const features = [
     {
-      icon: <Shield className="w-6 h-6 dark:text-white text-black" />,
+      icon: <Shield className="w-8 h-8 dark:text-white text-black rounded-full p-1" strokeWidth={1.5} />,
       title: t.features[0].title,
       description: t.features[0].description
     },
     {
-      icon: <CreditCard className="w-6 h-6 dark:text-white text-black" />,
+      icon: <CreditCard className="w-8 h-8 dark:text-white text-black rounded-full p-1" strokeWidth={1.5} />,
       title: t.features[1].title,
       description: t.features[1].description
     },
     {
-      icon: <img src="/lovable-uploads/660406c5-6dc8-409d-9cbe-8d6cf55a447e.png" alt="PIX + Open Finance" className="w-6 h-6 dark:invert" />,
+      icon: <img src="/lovable-uploads/660406c5-6dc8-409d-9cbe-8d6cf55a447e.png" alt="PIX + Open Finance" className="w-8 h-8 dark:invert rounded-full p-1" />,
       title: t.features[2].title,
       description: t.features[2].description
     }
