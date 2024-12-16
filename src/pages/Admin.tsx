@@ -84,29 +84,29 @@ const Admin = () => {
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen flex items-center justify-center p-4">
-        <div className="w-full max-w-sm space-y-4">
-          <div className="flex items-center justify-between mb-6">
-            <Link to="/" className="flex items-center gap-2 text-sm hover:text-gray-600 transition-colors">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Link>
-          </div>
-          <h1 className="text-2xl font-bold text-center mb-6">Admin Access</h1>
-          <div className="space-y-2">
-            <Input
-              type="password"
-              placeholder="Enter password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && handleLogin()}
-            />
-            <Button 
-              className="w-full" 
-              onClick={handleLogin}
-            >
-              Login
-            </Button>
+      <div className="min-h-screen p-4">
+        <Link to="/" className="flex items-center gap-2 text-sm hover:text-gray-600 transition-colors absolute top-4 left-4">
+          <ArrowLeft className="h-4 w-4" />
+          Back to Home
+        </Link>
+        <div className="flex items-center justify-center h-full">
+          <div className="w-full max-w-sm space-y-4">
+            <h1 className="text-2xl font-bold text-center mb-6">Admin Access</h1>
+            <div className="space-y-2">
+              <Input
+                type="password"
+                placeholder="Enter password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && handleLogin()}
+              />
+              <Button 
+                className="w-full" 
+                onClick={handleLogin}
+              >
+                Login
+              </Button>
+            </div>
           </div>
         </div>
       </div>
@@ -118,14 +118,12 @@ const Admin = () => {
   return (
     <div className="p-8">
       <div className="max-w-7xl mx-auto">
+        <Link to="/" className="flex items-center gap-2 text-sm hover:text-gray-600 transition-colors mb-6">
+          <ArrowLeft className="h-4 w-4" />
+          Back to Home
+        </Link>
         <div className="flex justify-between items-center mb-6">
-          <div className="flex items-center gap-4">
-            <Link to="/" className="flex items-center gap-2 text-sm hover:text-gray-600 transition-colors">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Link>
-            <h1 className="text-2xl font-bold">Waitlist Entries</h1>
-          </div>
+          <h1 className="text-2xl font-bold">Waitlist Entries</h1>
           <div className="flex gap-2">
             <Button 
               variant="outline"
