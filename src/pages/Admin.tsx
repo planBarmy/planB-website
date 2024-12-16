@@ -84,12 +84,12 @@ const Admin = () => {
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen p-4">
+      <div className="min-h-screen relative">
         <Link to="/" className="flex items-center gap-2 text-sm hover:text-gray-600 transition-colors absolute top-4 left-4">
           <ArrowLeft className="h-4 w-4" />
           Back to Home
         </Link>
-        <div className="flex items-center justify-center h-full">
+        <div className="flex items-center justify-center min-h-screen p-4">
           <div className="w-full max-w-sm space-y-4">
             <h1 className="text-2xl font-bold text-center mb-6">Admin Access</h1>
             <div className="space-y-2">
