@@ -4,9 +4,10 @@ import { supabase } from "@/integrations/supabase/client";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { RefreshCw } from "lucide-react";
+import { RefreshCw, ArrowLeft } from "lucide-react";
 import WaitlistTable from "@/components/admin/WaitlistTable";
 import DeleteConfirmDialog from "@/components/admin/DeleteConfirmDialog";
+import { Link } from "react-router-dom";
 
 const Admin = () => {
   const [password, setPassword] = useState("");
@@ -85,6 +86,12 @@ const Admin = () => {
     return (
       <div className="min-h-screen flex items-center justify-center p-4">
         <div className="w-full max-w-sm space-y-4">
+          <div className="flex items-center justify-between mb-6">
+            <Link to="/" className="flex items-center gap-2 text-sm hover:text-gray-600 transition-colors">
+              <ArrowLeft className="h-4 w-4" />
+              Back to Home
+            </Link>
+          </div>
           <h1 className="text-2xl font-bold text-center mb-6">Admin Access</h1>
           <div className="space-y-2">
             <Input
@@ -112,7 +119,13 @@ const Admin = () => {
     <div className="p-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-bold">Waitlist Entries</h1>
+          <div className="flex items-center gap-4">
+            <Link to="/" className="flex items-center gap-2 text-sm hover:text-gray-600 transition-colors">
+              <ArrowLeft className="h-4 w-4" />
+              Back to Home
+            </Link>
+            <h1 className="text-2xl font-bold">Waitlist Entries</h1>
+          </div>
           <div className="flex gap-2">
             <Button 
               variant="outline"
