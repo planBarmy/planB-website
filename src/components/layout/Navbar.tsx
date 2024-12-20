@@ -22,7 +22,7 @@ const Navbar = () => {
               : "/lovable-uploads/e8d8ffed-6f67-41fe-9cd5-babf013003ec.png"
             } 
             alt="PlanB Logo" 
-            className="h-6 w-auto object-contain sm:h-8 md:h-12"
+            className={`w-auto object-contain ${theme === 'dark' ? 'h-8 sm:h-10 md:h-14' : 'h-6 sm:h-8 md:h-12'}`}
           />
         </div>
         <div className="flex items-center gap-2 sm:gap-4">
