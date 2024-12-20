@@ -13,13 +13,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 py-3 dark:bg-black bg-background">
+    <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 py-3 dark:bg-black bg-[#f5f5f5]">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <img 
             src={theme === 'dark' 
               ? "/lovable-uploads/c3f4d49e-972f-4cdb-a43f-bc9b6e01077a.png"
-              : "/lovable-uploads/bf691c30-de5e-42c8-b57c-30eb658d5974.png"
+              : "/lovable-uploads/e8d8ffed-6f67-41fe-9cd5-babf013003ec.png"
             } 
             alt="PlanB Logo" 
             className="h-6 w-auto object-contain sm:h-8 md:h-12"
