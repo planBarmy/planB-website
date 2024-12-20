@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <img 
             src={theme === 'dark' 
-              ? "/lovable-uploads/eb97a2c9-aa44-4ce5-bbce-712a43408fbc.png"
+              ? "/lovable-uploads/c3f4d49e-972f-4cdb-a43f-bc9b6e01077a.png"
               : "/lovable-uploads/bf691c30-de5e-42c8-b57c-30eb658d5974.png"
             } 
             alt="PlanB Logo" 
